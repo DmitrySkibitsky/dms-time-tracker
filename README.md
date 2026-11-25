@@ -8,6 +8,10 @@ Works with **Clockify** today. Services are plugged in through adapters, so othe
 (Toggl Track, Harvest, Kimai, …) can be added without touching the UI — see
 [docs/PROVIDERS.md](docs/PROVIDERS.md).
 
+<p align="center">
+  <img src="docs/screenshots/popout.png" width="400" alt="Time Tracker popout: running timer with project, task, tags and billable flag above today's entries">
+</p>
+
 ## Features
 
 - **Bar widget** — running time, description and project; today's total when idle. Right click
