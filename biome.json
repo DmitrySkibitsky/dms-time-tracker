@@ -6,6 +6,7 @@
       "src/**",
       "tests/**",
       "scripts/**",
+      "*.ts",
       "*.json",
       "translations/**",
       "!lib/tracker.mjs",
