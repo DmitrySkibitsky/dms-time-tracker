@@ -77,9 +77,39 @@ entries in `translations/*.json`; `npm run i18n:check` (also in CI) rejects miss
 obsolete entries and mismatched `%1` placeholders. A new language is a new
 `translations/<locale>.json` (`{}` is enough, then sync).
 
-## Commits and releases
+## Workflow
 
-Commits follow [Conventional Commits](https://www.conventionalcommits.org/).
+- Every change goes through a branch and a pull request; nobody commits or pushes to `main`
+  directly. Branch names follow the commit type: `feat/…`, `fix/…`, `ci/…`, `docs/…`.
+- Commits and pull request titles follow [Conventional Commits](https://www.conventionalcommits.org/):
+  `<type>(<scope>): <short description>`, e.g. `fix(timer): keep the start time when editing the
+  description`. Formatting-only changes go in their own `style:` commit.
+- One concern per pull request. Every commit should make sense on its own: pull requests are
+  usually merged with **Rebase**, which keeps them; a branch with fix-up commits is squashed.
+- `main` is protected by two rulesets: a pull request gets in only when the **CI result** check
+  passed (linear history, no force pushes or deletion), and only the owner merges.
+- CI (`.github/workflows/ci.yml`): `Changes` decides whether anything besides `docs/`, Markdown
+  and `LICENSE` changed; if so, the TypeScript and QML (`nix flake check`) jobs run. `CI result`
+  passes when every job passed or was skipped for a documentation-only change; it is the single
+  required check.
+- Git hooks (`.githooks`) run the fast checks on commit and the tests on push. Never bypass them
+  with `--no-verify`; fix the cause.
+- Workflow actions are pinned to commit SHAs; Dependabot keeps the pins current.
 
-To release: bump `version` in both `package.json` and `plugin.json` (the manifest check keeps them
-equal), update `CHANGELOG.md`, tag `vX.Y.Z`. The release workflow attaches a plugin archive.
+## Pull requests
+
+Opening a pull request fills in [the template](.github/pull_request_template.md). Keep its
+sections, and fill in **AI assistance** every time:
+
+- whether an AI tool wrote or changed any part of the pull request (code, tests, docs, the
+  description itself);
+- if so, the tool and the exact model (e.g. Claude Code, `claude-opus-5-5`), and what it did.
+
+No "Generated with …" lines or AI co-author trailers in commits or descriptions: the AI section
+says it once, in a form every pull request shares.
+
+## Releases
+
+Bump `version` in both `package.json` and `plugin.json` (the manifest check keeps them equal),
+update `CHANGELOG.md`, merge, then tag `vX.Y.Z` on `main`. The release workflow attaches a plugin
+archive.
