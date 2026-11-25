@@ -1,0 +1,380 @@
+{
+    "(no description)": {
+        "(no description)": "(без описания)"
+    },
+    "1 minute": {
+        "1 minute": "1 минута"
+    },
+    "14 days": {
+        "14 days": "14 дней"
+    },
+    "2 minutes": {
+        "2 minutes": "2 минуты"
+    },
+    "30 days": {
+        "30 days": "30 дней"
+    },
+    "30 seconds": {
+        "30 seconds": "30 секунд"
+    },
+    "5 minutes": {
+        "5 minutes": "5 минут"
+    },
+    "7 days": {
+        "7 days": "7 дней"
+    },
+    "Account name": {
+        "Account name": "Название аккаунта"
+    },
+    "Account: %1": {
+        "Account: %1": "Аккаунт: %1"
+    },
+    "Accounts": {
+        "Accounts": "Аккаунты"
+    },
+    "Active account": {
+        "Active account": "Активный аккаунт"
+    },
+    "Add account": {
+        "Add account": "Добавить аккаунт"
+    },
+    "Add time entry": {
+        "Add time entry": "Добавить запись времени"
+    },
+    "Also switchable from the popout header": {
+        "Also switchable from the popout header": "Переключается и в заголовке всплывающего окна"
+    },
+    "API key": {
+        "API key": "API-ключ"
+    },
+    "API URL": {
+        "API URL": "URL API"
+    },
+    "Authentication failed: check the API key": {
+        "Authentication failed: check the API key": "Ошибка аутентификации: проверьте API-ключ"
+    },
+    "Bar": {
+        "Bar": "Панель"
+    },
+    "Billable": {
+        "Billable": "Оплачиваемое"
+    },
+    "Billable button": {
+        "Billable button": "Кнопка «оплачиваемое»"
+    },
+    "Billable by default": {
+        "Billable by default": "Оплачиваемое по умолчанию"
+    },
+    "Cancel": {
+        "Cancel": "Отмена"
+    },
+    "Change only for regional or self-hosted Clockify instances.": {
+        "Change only for regional or self-hosted Clockify instances.": "Меняйте только для региональных или self-hosted инстансов Clockify."
+    },
+    "Click again to delete": {
+        "Click again to delete": "Нажмите ещё раз, чтобы удалить"
+    },
+    "Click again to delete this account": {
+        "Click again to delete this account": "Нажмите ещё раз, чтобы удалить этот аккаунт"
+    },
+    "Click again to discard the timer": {
+        "Click again to discard the timer": "Нажмите ещё раз, чтобы сбросить таймер"
+    },
+    "Connect first to choose a workspace and a default project.": {
+        "Connect first to choose a workspace and a default project.": "Сначала подключитесь, чтобы выбрать рабочее пространство и проект по умолчанию."
+    },
+    "Connect your time tracking account in the plugin settings.": {
+        "Connect your time tracking account in the plugin settings.": "Подключите аккаунт трекера времени в настройках плагина."
+    },
+    "Connected as %1": {
+        "Connected as %1": "Подключено как %1"
+    },
+    "Connecting…": {
+        "Connecting…": "Подключение…"
+    },
+    "Continue": {
+        "Continue": "Продолжить"
+    },
+    "Date": {
+        "Date": "Дата"
+    },
+    "Days of entries shown in the popout": {
+        "Days of entries shown in the popout": "Сколько дней записей показывать во всплывающем окне"
+    },
+    "Default project": {
+        "Default project": "Проект по умолчанию"
+    },
+    "Default task": {
+        "Default task": "Задача по умолчанию"
+    },
+    "Delete": {
+        "Delete": "Удалить"
+    },
+    "Delete account": {
+        "Delete account": "Удалить аккаунт"
+    },
+    "Description": {
+        "Description": "Описание"
+    },
+    "Discard timer": {
+        "Discard timer": "Сбросить таймер"
+    },
+    "Duplicate": {
+        "Duplicate": "Дублировать"
+    },
+    "Duration": {
+        "Duration": "Длительность"
+    },
+    "e.g. Work": {
+        "e.g. Work": "например, Работа"
+    },
+    "Edit": {
+        "Edit": "Редактировать"
+    },
+    "Edit time entry": {
+        "Edit time entry": "Редактировать запись времени"
+    },
+    "Enable the plugin to connect.": {
+        "Enable the plugin to connect.": "Включите плагин, чтобы подключиться."
+    },
+    "End": {
+        "End": "Конец"
+    },
+    "Enter a valid end time": {
+        "Enter a valid end time": "Введите корректное время окончания"
+    },
+    "Enter a valid start time": {
+        "Enter a valid start time": "Введите корректное время начала"
+    },
+    "Enter an end time": {
+        "Enter an end time": "Введите время окончания"
+    },
+    "Enter the date as YYYY-MM-DD": {
+        "Enter the date as YYYY-MM-DD": "Введите дату в формате ГГГГ-ММ-ДД"
+    },
+    "Fill in the required fields to connect.": {
+        "Fill in the required fields to connect.": "Заполните обязательные поля, чтобы подключиться."
+    },
+    "Generate it in Clockify → Profile settings → API → Generate.": {
+        "Generate it in Clockify → Profile settings → API → Generate.": "Создайте его в Clockify → Настройки профиля → API → Generate."
+    },
+    "Hidden fields still use their defaults: the default project and the billable setting above.": {
+        "Hidden fields still use their defaults: the default project and the billable setting above.": "Скрытые поля всё равно получают значения по умолчанию: проект по умолчанию и настройку «оплачиваемое» выше."
+    },
+    "History": {
+        "History": "История"
+    },
+    "How often to pick up changes made in other apps": {
+        "How often to pick up changes made in other apps": "Как часто подтягивать изменения из других приложений"
+    },
+    "In the bar while no timer runs and on the Control Center tile. Turn off to keep it out of screenshots and recordings.": {
+        "In the bar while no timer runs and on the Control Center tile. Turn off to keep it out of screenshots and recordings.": "В панели, когда таймер остановлен, и на плитке Control Center. Выключите, чтобы значение не попадало на скриншоты и записи экрана."
+    },
+    "In the popout header": {
+        "In the popout header": "В заголовке всплывающего окна"
+    },
+    "Label width": {
+        "Label width": "Ширина подписи"
+    },
+    "Longer descriptions and project names are cut off with an ellipsis": {
+        "Longer descriptions and project names are cut off with an ellipsis": "Длинные описания и названия проектов обрезаются многоточием"
+    },
+    "Medium": {
+        "Medium": "Средняя"
+    },
+    "Monday": {
+        "Monday": "Понедельник"
+    },
+    "Narrow": {
+        "Narrow": "Узкая"
+    },
+    "New timers and entries start as billable. Also remembered when you switch it on the timer.": {
+        "New timers and entries start as billable. Also remembered when you switch it on the timer.": "Новые таймеры и записи создаются оплачиваемыми. Запоминается и при переключении на таймере."
+    },
+    "No matching tags": {
+        "No matching tags": "Нет подходящих тегов"
+    },
+    "No project": {
+        "No project": "Без проекта"
+    },
+    "No task": {
+        "No task": "Без задачи"
+    },
+    "No time entries yet": {
+        "No time entries yet": "Записей времени пока нет"
+    },
+    "No timer is running": {
+        "No timer is running": "Таймер не запущен"
+    },
+    "Non-billable": {
+        "Non-billable": "Неоплачиваемое"
+    },
+    "Not connected to the time tracking service": {
+        "Not connected to the time tracking service": "Нет подключения к сервису учёта времени"
+    },
+    "Not tracking": {
+        "Not tracking": "Не отслеживается"
+    },
+    "Not tracking · today %1": {
+        "Not tracking · today %1": "Не отслеживается · сегодня %1"
+    },
+    "Off": {
+        "Off": "Выкл."
+    },
+    "Open settings": {
+        "Open settings": "Открыть настройки"
+    },
+    "Popout": {
+        "Popout": "Всплывающее окно"
+    },
+    "Preselected for new timers and quick starts (right click on the bar, IPC)": {
+        "Preselected for new timers and quick starts (right click on the bar, IPC)": "Подставляется в новые таймеры и быстрый старт (правый клик по панели, IPC)"
+    },
+    "Project": {
+        "Project": "Проект"
+    },
+    "Project field": {
+        "Project field": "Поле проекта"
+    },
+    "Reconnect": {
+        "Reconnect": "Переподключить"
+    },
+    "Retry": {
+        "Retry": "Повторить"
+    },
+    "Right click the bar widget to start or stop the timer. Commands: dms ipc call timetracker toggle | start <description> | stop | continueLast | status": {
+        "Right click the bar widget to start or stop the timer. Commands: dms ipc call timetracker toggle | start <description> | stop | continueLast | status": "Правый клик по виджету на панели запускает или останавливает таймер. Команды: dms ipc call timetracker toggle | start <описание> | stop | continueLast | status"
+    },
+    "Save": {
+        "Save": "Сохранить"
+    },
+    "Search tags": {
+        "Search tags": "Поиск тегов"
+    },
+    "Select a project": {
+        "Select a project": "Выберите проект"
+    },
+    "Select tags": {
+        "Select tags": "Выберите теги"
+    },
+    "Service": {
+        "Service": "Сервис"
+    },
+    "Settings": {
+        "Settings": "Настройки"
+    },
+    "Show description": {
+        "Show description": "Показывать описание"
+    },
+    "Show project": {
+        "Show project": "Показывать проект"
+    },
+    "Show today's and this week's totals": {
+        "Show today's and this week's totals": "Показывать итоги за сегодня и за неделю"
+    },
+    "Show today's total": {
+        "Show today's total": "Показывать итог за сегодня"
+    },
+    "Show what you're working on next to the running time": {
+        "Show what you're working on next to the running time": "Показывать, над чем вы работаете, рядом с таймером"
+    },
+    "Something went wrong": {
+        "Something went wrong": "Что-то пошло не так"
+    },
+    "Start": {
+        "Start": "Старт"
+    },
+    "Started at %1": {
+        "Started at %1": "Начато в %1"
+    },
+    "Stop": {
+        "Stop": "Стоп"
+    },
+    "Sunday": {
+        "Sunday": "Воскресенье"
+    },
+    "Sync interval": {
+        "Sync interval": "Интервал синхронизации"
+    },
+    "Sync now": {
+        "Sync now": "Синхронизировать"
+    },
+    "Tags": {
+        "Tags": "Теги"
+    },
+    "Tags field": {
+        "Tags field": "Поле тегов"
+    },
+    "Task": {
+        "Task": "Задача"
+    },
+    "The end must be after the start": {
+        "The end must be after the start": "Конец должен быть позже начала"
+    },
+    "The entry no longer exists": {
+        "The entry no longer exists": "Запись больше не существует"
+    },
+    "The service is unreachable": {
+        "The service is unreachable": "Сервис недоступен"
+    },
+    "The start time can't be in the future": {
+        "The start time can't be in the future": "Время начала не может быть в будущем"
+    },
+    "The Time Tracker background service isn't running. Re-enable the plugin.": {
+        "The Time Tracker background service isn't running. Re-enable the plugin.": "Фоновый сервис Time Tracker не запущен. Перевключите плагин."
+    },
+    "This workspace requires a description": {
+        "This workspace requires a description": "В этом рабочем пространстве описание обязательно"
+    },
+    "This workspace requires a project": {
+        "This workspace requires a project": "В этом рабочем пространстве проект обязателен"
+    },
+    "This workspace requires a task": {
+        "This workspace requires a task": "В этом рабочем пространстве задача обязательна"
+    },
+    "This workspace requires at least one tag": {
+        "This workspace requires at least one tag": "В этом рабочем пространстве нужен хотя бы один тег"
+    },
+    "Time Tracker": {
+        "Time Tracker": "Time Tracker"
+    },
+    "Time tracking service to connect to": {
+        "Time tracking service to connect to": "Сервис учёта времени для подключения"
+    },
+    "Today": {
+        "Today": "Сегодня"
+    },
+    "Today %1 · This week %2": {
+        "Today %1 · This week %2": "Сегодня %1 · За неделю %2"
+    },
+    "Too many requests, try again later": {
+        "Too many requests, try again later": "Слишком много запросов, попробуйте позже"
+    },
+    "Tracking": {
+        "Tracking": "Учёт времени"
+    },
+    "Very narrow": {
+        "Very narrow": "Очень узкая"
+    },
+    "Week starts on": {
+        "Week starts on": "Неделя начинается с"
+    },
+    "What are you working on?": {
+        "What are you working on?": "Над чем работаете?"
+    },
+    "What are you working on? (required)": {
+        "What are you working on? (required)": "Над чем работаете? (обязательно)"
+    },
+    "Where entries are tracked": {
+        "Where entries are tracked": "Куда записывается время"
+    },
+    "Wide": {
+        "Wide": "Широкая"
+    },
+    "Workspace": {
+        "Workspace": "Рабочее пространство"
+    },
+    "Yesterday": {
+        "Yesterday": "Вчера"
+    }
+}

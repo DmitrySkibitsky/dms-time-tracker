@@ -1,0 +1,47 @@
+#!/bin/sh
+# Fast checks on every commit: formatting, lint, types, translations, manifest and an
+# up-to-date bundle. Tests run in pre-push. Bypass in emergencies with `git commit --no-verify`.
+set -eu
+cd "$(git rev-parse --show-toplevel)"
+
+step() { printf '\033[1;34m▸ %s\033[0m\n' "$1"; }
+have() { command -v "$1" >/dev/null 2>&1; }
+
+if [ ! -x node_modules/.bin/biome ]; then
+    echo "pre-commit: dependencies missing, run 'npm ci' (or enter 'nix develop')" >&2
+    exit 1
+fi
+
+step "biome (format + lint, staged files)"
+node_modules/.bin/biome check --staged --no-errors-on-unmatched
+
+step "typecheck"
+npm run --silent typecheck
+
+STAGED_QML=$(git diff --cached --name-only --diff-filter=ACMR -- '*.qml')
+if [ -n "$STAGED_QML" ]; then
+    if have qmlformat && have qmllint; then
+        step "qmlformat --check"
+        # shellcheck disable=SC2086
+        node scripts/format-qml.ts --check $STAGED_QML
+        step "qmllint"
+        npm run --silent lint:qml
+    else
+        echo "pre-commit: qmlformat/qmllint not on PATH, QML checks skipped (CI runs them; use 'nix develop')" >&2
+    fi
+fi
+
+step "translations"
+npm run --silent i18n:check
+
+step "plugin.json"
+npm run --silent check:manifest
+
+if git diff --cached --name-only -- src | grep -q .; then
+    step "bundle up to date"
+    npm run --silent build
+    if ! git diff --quiet -- lib/tracker.mjs; then
+        echo "pre-commit: lib/tracker.mjs is stale; it was rebuilt, review and 'git add lib/tracker.mjs'" >&2
+        exit 1
+    fi
+fi

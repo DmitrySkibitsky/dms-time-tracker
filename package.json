@@ -1,0 +1,37 @@
+{
+  "name": "dms-time-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Time tracking plugin for DMS (Dux Modular Shell) with pluggable providers (Clockify first)",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "prepare": "git config core.hooksPath .githooks 2>/dev/null || true",
+    "build": "node scripts/build.mjs",
+    "build:test": "node scripts/build.mjs --test",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.test.json",
+    "lint": "npm run lint:ts && npm run lint:qml",
+    "lint:ts": "biome check .",
+    "lint:qml": "node scripts/lint-qml.ts",
+    "format": "biome check --write . && node scripts/format-qml.ts",
+    "format:check": "biome format . && node scripts/format-qml.ts --check",
+    "test": "npm run test:unit && npm run test:qml",
+    "test:unit": "TZ=UTC node --test \"tests/unit/**/*.test.ts\" \"tests/contract/**/*.test.ts\"",
+    "test:qml": "npm run build:test && sh scripts/run-qml-tests.sh",
+    "i18n:check": "node scripts/i18n.ts check",
+    "i18n:sync": "node scripts/i18n.ts sync",
+    "check:manifest": "node scripts/check-manifest.ts",
+    "check:bundle": "npm run build && git diff --exit-code -- lib/tracker.mjs",
+    "qml:env": "node scripts/qml-env.ts",
+    "check": "npm run typecheck && npm run lint && npm run format:check && npm run i18n:check && npm run check:manifest && npm run check:bundle && npm test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.8",
+    "@types/node": "26.6.6",
+    "esbuild": "0.28.2",
+    "typescript": "7.0.2"
+  }
+}

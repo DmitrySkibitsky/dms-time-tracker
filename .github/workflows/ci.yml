@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  typescript:
+    name: TypeScript (types, lint, format, unit tests, bundle)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Biome (lint + format)
+        run: npx --no-install biome ci .
+
+      - name: Translations
+        run: npm run i18n:check
+
+      - name: Manifest
+        run: npm run check:manifest
+
+      - name: Unit and contract tests
+        run: npm run test:unit
+
+      - name: Committed bundle is up to date
+        run: |
+          npm run build
+          git diff --exit-code -- lib/tracker.mjs || {
+            echo "::error file=lib/tracker.mjs::lib/tracker.mjs is stale. Run 'npm run build' and commit it."
+            exit 1
+          }
+
+  qml:
+    name: QML (qmllint, qmlformat, QML + HTTP tests) via nix flake check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+
+      - name: nix flake check
+        run: nix flake check -L --show-trace

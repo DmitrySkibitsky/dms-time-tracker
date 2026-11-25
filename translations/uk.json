@@ -1,0 +1,380 @@
+{
+    "(no description)": {
+        "(no description)": "(без опису)"
+    },
+    "1 minute": {
+        "1 minute": "1 хвилина"
+    },
+    "14 days": {
+        "14 days": "14 днів"
+    },
+    "2 minutes": {
+        "2 minutes": "2 хвилини"
+    },
+    "30 days": {
+        "30 days": "30 днів"
+    },
+    "30 seconds": {
+        "30 seconds": "30 секунд"
+    },
+    "5 minutes": {
+        "5 minutes": "5 хвилин"
+    },
+    "7 days": {
+        "7 days": "7 днів"
+    },
+    "Account name": {
+        "Account name": "Назва облікового запису"
+    },
+    "Account: %1": {
+        "Account: %1": "Обліковий запис: %1"
+    },
+    "Accounts": {
+        "Accounts": "Облікові записи"
+    },
+    "Active account": {
+        "Active account": "Активний обліковий запис"
+    },
+    "Add account": {
+        "Add account": "Додати обліковий запис"
+    },
+    "Add time entry": {
+        "Add time entry": "Додати запис часу"
+    },
+    "Also switchable from the popout header": {
+        "Also switchable from the popout header": "Перемикається й у заголовку спливного вікна"
+    },
+    "API key": {
+        "API key": "API-ключ"
+    },
+    "API URL": {
+        "API URL": "URL API"
+    },
+    "Authentication failed: check the API key": {
+        "Authentication failed: check the API key": "Помилка автентифікації: перевірте API-ключ"
+    },
+    "Bar": {
+        "Bar": "Панель"
+    },
+    "Billable": {
+        "Billable": "Оплачуване"
+    },
+    "Billable button": {
+        "Billable button": "Кнопка «оплачуване»"
+    },
+    "Billable by default": {
+        "Billable by default": "Оплачуване за замовчуванням"
+    },
+    "Cancel": {
+        "Cancel": "Скасувати"
+    },
+    "Change only for regional or self-hosted Clockify instances.": {
+        "Change only for regional or self-hosted Clockify instances.": "Змінюйте лише для регіональних або self-hosted інстансів Clockify."
+    },
+    "Click again to delete": {
+        "Click again to delete": "Натисніть ще раз, щоб видалити"
+    },
+    "Click again to delete this account": {
+        "Click again to delete this account": "Натисніть ще раз, щоб видалити цей обліковий запис"
+    },
+    "Click again to discard the timer": {
+        "Click again to discard the timer": "Натисніть ще раз, щоб скинути таймер"
+    },
+    "Connect first to choose a workspace and a default project.": {
+        "Connect first to choose a workspace and a default project.": "Спершу підключіться, щоб обрати робочий простір і проєкт за замовчуванням."
+    },
+    "Connect your time tracking account in the plugin settings.": {
+        "Connect your time tracking account in the plugin settings.": "Підключіть обліковий запис трекера часу в налаштуваннях плагіна."
+    },
+    "Connected as %1": {
+        "Connected as %1": "Підключено як %1"
+    },
+    "Connecting…": {
+        "Connecting…": "Підключення…"
+    },
+    "Continue": {
+        "Continue": "Продовжити"
+    },
+    "Date": {
+        "Date": "Дата"
+    },
+    "Days of entries shown in the popout": {
+        "Days of entries shown in the popout": "Скільки днів записів показувати у спливному вікні"
+    },
+    "Default project": {
+        "Default project": "Проєкт за замовчуванням"
+    },
+    "Default task": {
+        "Default task": "Завдання за замовчуванням"
+    },
+    "Delete": {
+        "Delete": "Видалити"
+    },
+    "Delete account": {
+        "Delete account": "Видалити обліковий запис"
+    },
+    "Description": {
+        "Description": "Опис"
+    },
+    "Discard timer": {
+        "Discard timer": "Скинути таймер"
+    },
+    "Duplicate": {
+        "Duplicate": "Дублювати"
+    },
+    "Duration": {
+        "Duration": "Тривалість"
+    },
+    "e.g. Work": {
+        "e.g. Work": "наприклад, Робота"
+    },
+    "Edit": {
+        "Edit": "Редагувати"
+    },
+    "Edit time entry": {
+        "Edit time entry": "Редагувати запис часу"
+    },
+    "Enable the plugin to connect.": {
+        "Enable the plugin to connect.": "Увімкніть плагін, щоб підключитися."
+    },
+    "End": {
+        "End": "Кінець"
+    },
+    "Enter a valid end time": {
+        "Enter a valid end time": "Введіть коректний час завершення"
+    },
+    "Enter a valid start time": {
+        "Enter a valid start time": "Введіть коректний час початку"
+    },
+    "Enter an end time": {
+        "Enter an end time": "Введіть час завершення"
+    },
+    "Enter the date as YYYY-MM-DD": {
+        "Enter the date as YYYY-MM-DD": "Введіть дату у форматі РРРР-ММ-ДД"
+    },
+    "Fill in the required fields to connect.": {
+        "Fill in the required fields to connect.": "Заповніть обов'язкові поля, щоб підключитися."
+    },
+    "Generate it in Clockify → Profile settings → API → Generate.": {
+        "Generate it in Clockify → Profile settings → API → Generate.": "Створіть його в Clockify → Налаштування профілю → API → Generate."
+    },
+    "Hidden fields still use their defaults: the default project and the billable setting above.": {
+        "Hidden fields still use their defaults: the default project and the billable setting above.": "Приховані поля все одно отримують значення за замовчуванням: проєкт за замовчуванням і налаштування «оплачуване» вище."
+    },
+    "History": {
+        "History": "Історія"
+    },
+    "How often to pick up changes made in other apps": {
+        "How often to pick up changes made in other apps": "Як часто підтягувати зміни з інших застосунків"
+    },
+    "In the bar while no timer runs and on the Control Center tile. Turn off to keep it out of screenshots and recordings.": {
+        "In the bar while no timer runs and on the Control Center tile. Turn off to keep it out of screenshots and recordings.": "На панелі, коли таймер зупинено, і на плитці Control Center. Вимкніть, щоб значення не потрапляло на скріншоти й записи екрана."
+    },
+    "In the popout header": {
+        "In the popout header": "У заголовку спливного вікна"
+    },
+    "Label width": {
+        "Label width": "Ширина підпису"
+    },
+    "Longer descriptions and project names are cut off with an ellipsis": {
+        "Longer descriptions and project names are cut off with an ellipsis": "Довгі описи й назви проєктів обрізаються трикрапкою"
+    },
+    "Medium": {
+        "Medium": "Середня"
+    },
+    "Monday": {
+        "Monday": "Понеділок"
+    },
+    "Narrow": {
+        "Narrow": "Вузька"
+    },
+    "New timers and entries start as billable. Also remembered when you switch it on the timer.": {
+        "New timers and entries start as billable. Also remembered when you switch it on the timer.": "Нові таймери та записи створюються оплачуваними. Запам'ятовується й під час перемикання на таймері."
+    },
+    "No matching tags": {
+        "No matching tags": "Немає відповідних тегів"
+    },
+    "No project": {
+        "No project": "Без проєкту"
+    },
+    "No task": {
+        "No task": "Без завдання"
+    },
+    "No time entries yet": {
+        "No time entries yet": "Записів часу поки немає"
+    },
+    "No timer is running": {
+        "No timer is running": "Таймер не запущено"
+    },
+    "Non-billable": {
+        "Non-billable": "Неоплачуване"
+    },
+    "Not connected to the time tracking service": {
+        "Not connected to the time tracking service": "Немає підключення до сервісу обліку часу"
+    },
+    "Not tracking": {
+        "Not tracking": "Не відстежується"
+    },
+    "Not tracking · today %1": {
+        "Not tracking · today %1": "Не відстежується · сьогодні %1"
+    },
+    "Off": {
+        "Off": "Вимк."
+    },
+    "Open settings": {
+        "Open settings": "Відкрити налаштування"
+    },
+    "Popout": {
+        "Popout": "Спливне вікно"
+    },
+    "Preselected for new timers and quick starts (right click on the bar, IPC)": {
+        "Preselected for new timers and quick starts (right click on the bar, IPC)": "Підставляється в нові таймери та швидкий старт (правий клік на панелі, IPC)"
+    },
+    "Project": {
+        "Project": "Проєкт"
+    },
+    "Project field": {
+        "Project field": "Поле проєкту"
+    },
+    "Reconnect": {
+        "Reconnect": "Перепідключити"
+    },
+    "Retry": {
+        "Retry": "Повторити"
+    },
+    "Right click the bar widget to start or stop the timer. Commands: dms ipc call timetracker toggle | start <description> | stop | continueLast | status": {
+        "Right click the bar widget to start or stop the timer. Commands: dms ipc call timetracker toggle | start <description> | stop | continueLast | status": "Правий клік на віджеті панелі запускає або зупиняє таймер. Команди: dms ipc call timetracker toggle | start <опис> | stop | continueLast | status"
+    },
+    "Save": {
+        "Save": "Зберегти"
+    },
+    "Search tags": {
+        "Search tags": "Пошук тегів"
+    },
+    "Select a project": {
+        "Select a project": "Оберіть проєкт"
+    },
+    "Select tags": {
+        "Select tags": "Оберіть теги"
+    },
+    "Service": {
+        "Service": "Сервіс"
+    },
+    "Settings": {
+        "Settings": "Налаштування"
+    },
+    "Show description": {
+        "Show description": "Показувати опис"
+    },
+    "Show project": {
+        "Show project": "Показувати проєкт"
+    },
+    "Show today's and this week's totals": {
+        "Show today's and this week's totals": "Показувати підсумки за сьогодні й за тиждень"
+    },
+    "Show today's total": {
+        "Show today's total": "Показувати підсумок за сьогодні"
+    },
+    "Show what you're working on next to the running time": {
+        "Show what you're working on next to the running time": "Показувати, над чим ви працюєте, поруч із таймером"
+    },
+    "Something went wrong": {
+        "Something went wrong": "Щось пішло не так"
+    },
+    "Start": {
+        "Start": "Старт"
+    },
+    "Started at %1": {
+        "Started at %1": "Розпочато о %1"
+    },
+    "Stop": {
+        "Stop": "Стоп"
+    },
+    "Sunday": {
+        "Sunday": "Неділя"
+    },
+    "Sync interval": {
+        "Sync interval": "Інтервал синхронізації"
+    },
+    "Sync now": {
+        "Sync now": "Синхронізувати"
+    },
+    "Tags": {
+        "Tags": "Теги"
+    },
+    "Tags field": {
+        "Tags field": "Поле тегів"
+    },
+    "Task": {
+        "Task": "Завдання"
+    },
+    "The end must be after the start": {
+        "The end must be after the start": "Кінець має бути пізніше за початок"
+    },
+    "The entry no longer exists": {
+        "The entry no longer exists": "Запис більше не існує"
+    },
+    "The service is unreachable": {
+        "The service is unreachable": "Сервіс недоступний"
+    },
+    "The start time can't be in the future": {
+        "The start time can't be in the future": "Час початку не може бути в майбутньому"
+    },
+    "The Time Tracker background service isn't running. Re-enable the plugin.": {
+        "The Time Tracker background service isn't running. Re-enable the plugin.": "Фоновий сервіс Time Tracker не запущено. Повторно увімкніть плагін."
+    },
+    "This workspace requires a description": {
+        "This workspace requires a description": "У цьому робочому просторі опис обов'язковий"
+    },
+    "This workspace requires a project": {
+        "This workspace requires a project": "У цьому робочому просторі проєкт обов'язковий"
+    },
+    "This workspace requires a task": {
+        "This workspace requires a task": "У цьому робочому просторі завдання обов'язкове"
+    },
+    "This workspace requires at least one tag": {
+        "This workspace requires at least one tag": "У цьому робочому просторі потрібен хоча б один тег"
+    },
+    "Time Tracker": {
+        "Time Tracker": "Time Tracker"
+    },
+    "Time tracking service to connect to": {
+        "Time tracking service to connect to": "Сервіс обліку часу для підключення"
+    },
+    "Today": {
+        "Today": "Сьогодні"
+    },
+    "Today %1 · This week %2": {
+        "Today %1 · This week %2": "Сьогодні %1 · За тиждень %2"
+    },
+    "Too many requests, try again later": {
+        "Too many requests, try again later": "Забагато запитів, спробуйте пізніше"
+    },
+    "Tracking": {
+        "Tracking": "Облік часу"
+    },
+    "Very narrow": {
+        "Very narrow": "Дуже вузька"
+    },
+    "Week starts on": {
+        "Week starts on": "Тиждень починається з"
+    },
+    "What are you working on?": {
+        "What are you working on?": "Над чим працюєте?"
+    },
+    "What are you working on? (required)": {
+        "What are you working on? (required)": "Над чим працюєте? (обов'язково)"
+    },
+    "Where entries are tracked": {
+        "Where entries are tracked": "Куди записується час"
+    },
+    "Wide": {
+        "Wide": "Широка"
+    },
+    "Workspace": {
+        "Workspace": "Робочий простір"
+    },
+    "Yesterday": {
+        "Yesterday": "Учора"
+    }
+}

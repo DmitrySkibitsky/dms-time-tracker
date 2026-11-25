@@ -1,0 +1,18 @@
+{
+  "id": "timeTracker",
+  "name": "Time Tracker",
+  "description": "Track time from the bar: start/stop timers, pick projects, tasks and tags, edit entries and add time manually. Works with Clockify; built on pluggable providers.",
+  "version": "0.1.0",
+  "author": "Dmitry Skibitsky",
+  "repo": "https://github.com/DmitrySkibitsky/dms-time-tracker",
+  "type": "composite",
+  "capabilities": ["daemon", "dankbar-widget", "control-center"],
+  "icon": "timer",
+  "components": {
+    "daemon": "./TimeTrackerDaemon.qml",
+    "widget": "./TimeTrackerWidget.qml"
+  },
+  "settings": "./TimeTrackerSettings.qml",
+  "requires_dms": ">=2.0.0",
+  "permissions": ["settings_read", "settings_write", "network"]
+}

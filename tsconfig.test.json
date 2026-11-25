@@ -1,0 +1,9 @@
+{
+  // Tests and tooling run on Node.
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["es2023"],
+    "types": ["node"]
+  },
+  "include": ["tests", "scripts/*.ts"]
+}

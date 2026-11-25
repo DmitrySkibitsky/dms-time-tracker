@@ -1,0 +1,11 @@
+{
+  // Plugin sources run inside the QML V4 engine (ES2016 syntax after bundling, ES2017
+  // built-ins). Restricting `lib` makes TypeScript reject APIs V4 lacks, such as
+  // Array.prototype.flat, Promise.prototype.finally or Object.fromEntries.
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["es2017"],
+    "types": []
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,14 @@
+#!/bin/sh
+# Runs the test suites before pushing. Bypass with `git push --no-verify`.
+set -eu
+cd "$(git rev-parse --show-toplevel)"
+
+printf '\033[1;34m▸ %s\033[0m\n' "unit + contract tests"
+npm run --silent test:unit
+
+if command -v qmltestrunner >/dev/null 2>&1; then
+    printf '\033[1;34m▸ %s\033[0m\n' "QML tests"
+    npm run --silent test:qml
+else
+    echo "pre-push: qmltestrunner not on PATH, QML tests skipped (CI runs them; use 'nix develop')" >&2
+fi

@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*.*.*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Tag matches plugin version
+        run: |
+          version="$(jq -r .version plugin.json)"
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::tag $GITHUB_REF_NAME does not match plugin.json version $version"
+            exit 1
+          fi
+
+      - name: Package the plugin directory
+        run: |
+          mkdir -p dist/timeTracker
+          cp -r plugin.json TimeTrackerDaemon.qml TimeTrackerWidget.qml TimeTrackerSettings.qml \
+            ui lib translations README.md LICENSE dist/timeTracker/
+          (cd dist && zip -r "timeTracker-$GITHUB_REF_NAME.zip" timeTracker)
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          notes="$(awk -v v="${GITHUB_REF_NAME#v}" '/^## \[/{p = index($0, "[" v "]") > 0; next} p' CHANGELOG.md)"
+          gh release create "$GITHUB_REF_NAME" "dist/timeTracker-$GITHUB_REF_NAME.zip" \
+            --title "$GITHUB_REF_NAME" --notes "${notes:-See CHANGELOG.md}"

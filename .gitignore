@@ -1,0 +1,7 @@
+node_modules/
+result
+result-*
+# Test-only bundles produced by `npm run build:test`
+tests/qml/generated/
+.qml-env/
+.qmlls.ini
