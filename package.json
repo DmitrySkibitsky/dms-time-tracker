@@ -26,11 +26,13 @@
     "check:manifest": "node scripts/check-manifest.ts",
     "check:bundle": "npm run build && git diff --exit-code -- lib/tracker.mjs",
     "qml:env": "node scripts/qml-env.ts",
-    "check": "npm run typecheck && npm run lint && npm run format:check && npm run i18n:check && npm run check:manifest && npm run check:bundle && npm test"
+    "check": "npm run typecheck && npm run lint && npm run format:check && npm run i18n:check && npm run check:manifest && npm run check:bundle && npm test",
+    "changelog": "changelogen --bump && node scripts/sync-version.ts"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.8",
     "@types/node": "26.6.6",
+    "changelogen": "0.6.2",
     "esbuild": "0.28.2",
     "typescript": "7.0.2"
   }
