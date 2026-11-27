@@ -1,13 +1,14 @@
 {
-  "id": "timeTracker",
-  "name": "Time Tracker",
-  "capabilities": ["dankbar-widget", "control-center", "daemon"],
-  "category": "productivity",
-  "repo": "https://github.com/DmitrySkibitsky/dms-time-tracker",
-  "author": "Dmitry Skibitsky",
-  "description": "Track time from the bar: start/stop timers, pick projects, tasks and tags, edit entries and add time manually. Works with Clockify.",
-  "dependencies": [],
-  "compositors": ["any"],
-  "distro": ["any"],
-  "screenshot": "https://raw.githubusercontent.com/DmitrySkibitsky/dms-time-tracker/main/docs/screenshots/preview.png"
+    "id": "timeTracker",
+    "name": "Time Tracker",
+    "capabilities": ["dankbar-widget", "control-center", "daemon", "ipc"],
+    "category": "productivity",
+    "repo": "https://github.com/DmitrySkibitsky/dms-time-tracker",
+    "author": "Dmitry Skibitsky",
+    "description": "Track time from the bar: start/stop timers, pick projects, tasks and tags, edit entries and add time manually. Works with Clockify.",
+    "dependencies": [],
+    "compositors": ["any"],
+    "distro": ["any"],
+    "screenshot": "https://raw.githubusercontent.com/DmitrySkibitsky/dms-time-tracker/main/docs/screenshots/preview.png",
+    "requires_dms": ">=2.0.0"
 }
